@@ -1,7 +1,7 @@
-import React from "react";
-import { NextStatelessComponent } from "next";
+import React from 'react';
+import { NextStatelessComponent } from 'next';
 
-import { version } from "@game/core";
+import { version } from '@game/core';
 
 interface Props {
   data: string;
@@ -17,7 +17,7 @@ const GamePageIndex: NextStatelessComponent<Props> = ({ data }) => {
 
 GamePageIndex.getInitialProps = async () => {
   return {
-    data: "some fake data"
+    data: 'some fake data',
   };
 };
 
