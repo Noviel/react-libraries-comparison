@@ -3,10 +3,15 @@
   "compilerOptions": {
     "lib": ["es6"],
     "module": "commonjs",
+    "target": "es6",
     "noImplicitReturns": true,
     "outDir": "lib",
     "sourceMap": true,
-    "target": "es6"
+    "baseUrl": ".",
+    "paths": {
+      "@game/core": ["../core"],
+      "@game/core/*": ["../core/*"]
+    }
   },
   "include": [
     "src"

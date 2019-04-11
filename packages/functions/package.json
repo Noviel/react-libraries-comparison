@@ -3,11 +3,8 @@
   "version": "0.1.0",
   "main": "lib/index.js",
   "license": "MIT",
-  "engines": {
-    "node": "*"
-  },
   "scripts": {
-    "build": "../../node_modules/.bin/tsc",
+    "build": "../../node_modules/.bin/tsc -p tsconfig.json --traceResolution",
     "deploy": "firebase deploy --only functions"
   },
   "dependencies": {

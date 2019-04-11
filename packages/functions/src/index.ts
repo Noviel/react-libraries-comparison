@@ -8,6 +8,8 @@ import * as helmet from 'helmet';
 import * as cors from 'cors';
 import * as bodyParser from 'body-parser';
 
+import { version as gameVersion } from '@game/core';
+
 import { getVersion } from './lib';
 
 admin.initializeApp();
@@ -32,5 +34,5 @@ export const app = functions.https.onRequest(async (req, res) => {
 });
 
 export const helloWorld = functions.https.onRequest((request, response) => {
-  response.send(`Hello from Firebase! ${getVersion()}\n\n`);
+  response.send(`Hello from Firebase! ${getVersion()} game: ${gameVersion}\n\n`);
 });
