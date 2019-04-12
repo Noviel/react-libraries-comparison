@@ -1,10 +1,12 @@
 {
-  "name": "@game/functions",
+  "name": "@game/functions-ssr",
   "version": "0.1.0",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "build": "../../node_modules/.bin/tsc -p tsconfig.json --traceResolution",
+    "build:ts": "../../node_modules/.bin/tsc -p tsconfig.json --traceResolution",
+    "build:webpack": "../../node_modules/.bin/webpack",
+    "build:prod": "cross-env NODE_ENV=production yarn build:webpack",
     "deploy": "firebase deploy --only functions"
   },
   "dependencies": {

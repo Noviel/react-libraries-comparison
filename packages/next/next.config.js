@@ -14,15 +14,6 @@ module.exports = withPlugins(
     withCustomBabelConfig
   ],
   {
-    distDir: "../functions/next"
+    distDir: "../functions-ssr/next"
   }
 );
-
-// withCustomBabelConfig(
-//   withTypescript(
-//     withTranspileModules({
-//       transpileModules: ["@game"],
-//       babelConfigFile: path.resolve("../../babel.config.js")
-//     })
-//   )
-// );

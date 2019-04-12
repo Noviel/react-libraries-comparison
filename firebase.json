@@ -1,7 +1,7 @@
 {
   "functions": {
-    "source": "packages/functions",
+    "source": "packages/functions-ssr",
     "predeploy":
-      "yarn workspace @game/functions build"
+      "yarn workspace @game/functions-ssr build:prod"
   }
 }
