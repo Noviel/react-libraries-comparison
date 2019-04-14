@@ -6,7 +6,7 @@ module.exports = function(api) {
     ['@babel/preset-typescript', { allExtensions: true }],
   ];
 
-  const plugins = []; //[["styled-components"]];
+  const plugins = [];
 
   return {
     presets,

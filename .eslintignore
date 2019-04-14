@@ -1,2 +1,2 @@
-packages/functions/lib
-packages/functions/dist
+packages/functions-ssr/lib
+packages/functions-ssr/dist

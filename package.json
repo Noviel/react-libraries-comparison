@@ -49,6 +49,10 @@
     "typescript": "^3.4.3",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
-    "webpack-node-externals": "^1.7.2"
+    "webpack-node-externals": "^1.7.2",
+    "worker-loader": "^2.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^7.0.0"
   }
 }
