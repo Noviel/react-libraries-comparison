@@ -1,12 +1,9 @@
 {
-  "name": "@game/web",
+  "name": "@game/utils",
   "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {},
   "dependencies": {
-    "@game/core": "*",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
   }
 }
