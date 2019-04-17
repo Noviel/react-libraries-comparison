@@ -4,9 +4,7 @@
     "lib": ["es6"],
     "module": "commonjs",
     "target": "es6",
-    "noImplicitReturns": true,
     "outDir": "lib",
-    "sourceMap": true,
     "baseUrl": ".",
     "paths": {
       "@game/core": ["../core"],
