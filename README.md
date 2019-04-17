@@ -6,3 +6,5 @@
 - React as an UI layer
 - Monorepo via Yarn workspaces
 - Server side rendering with Next.js and Firebase functions
+- Heavy blocking calculations are moved to Web Workers
+

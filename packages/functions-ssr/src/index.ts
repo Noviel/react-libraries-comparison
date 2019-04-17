@@ -20,7 +20,11 @@ const handle = nextApp.getRequestHandler();
 const server = express();
 
 server.disable('x-powered-by');
-server.use(cors());
+server.use(
+  cors({
+    origin: true,
+  })
+);
 server.use(bodyParser.json());
 server.set('trust proxy', 1);
 server.use(compression());

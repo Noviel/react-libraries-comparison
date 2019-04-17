@@ -6,6 +6,9 @@
   "author": "Alexander \"snov\" Semenchenko <snov.contact@gmail.com\"",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "release:web": "yarn workspace @game/next build && yarn workspace @game/functions-ssr deploy && firebase deploy --only hosting:next"
+  },
   "workspaces": [
     "packages/**"
   ],
