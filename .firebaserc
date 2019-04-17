@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "dqnt-dev"
+  },
+  "targets": {
+    "dqnt-dev": {
+      "hosting": {
+        "next": [
+          "next-dqnt-dev"
+        ]
+      }
+    }
   }
 }

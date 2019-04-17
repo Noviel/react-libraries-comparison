@@ -3,5 +3,15 @@
     "source": "packages/functions-ssr",
     "predeploy":
       "yarn workspace @game/functions-ssr build:prod"
-  }
+  },
+  "hosting": [{
+    "target": "next",
+    "public": "packages/next/out",
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "app"
+      }
+    ]
+  }]
 }
