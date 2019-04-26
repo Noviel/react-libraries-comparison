@@ -1,0 +1,11 @@
+{
+  "name": "@project/clicker-node",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+  },
+  "dependencies": {
+    "@project/clicker-core": "*"
+  }
+}

@@ -1,5 +1,6 @@
 .firebase
 yarn-error.log
+firebase-*.log
 node_modules
 .env
 .env.*

@@ -1,0 +1,10 @@
+{
+  "name": "@project/devtools",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {
+    "shelljs": "^0.8.3",
+    "yargs": "^13.2.2"
+  }
+}

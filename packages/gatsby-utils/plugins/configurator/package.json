@@ -1,0 +1,14 @@
+{
+  "name": "gatsby-plugin-configurator",
+  "description": "DQNT Gatsby configuration plugin",
+  "version": "0.1.0",
+  "author": "snov.contact@gmail.com",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": ">2.0.0"
+  }
+}

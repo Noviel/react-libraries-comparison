@@ -4,13 +4,21 @@ const withCustomBabelConfig = require('next-plugin-custom-babel-config');
 const withTypescript = require('@zeit/next-typescript');
 const withTranspileModules = require('next-plugin-transpile-modules');
 
+const { createDefinesFromObject } = require('@project/devtools/lib/format-defines');
+const { readEnv } = require('@project/devtools/lib/read-env');
+
+readEnv();
+
+const app = require('./app.config');
+const appConfig = app();
+
 module.exports = withPlugins(
   [
     [withTypescript, {}],
     [
       withTranspileModules,
       {
-        transpileModules: ['@game'],
+        transpileModules: ['@project'],
       },
     ],
     [withCustomBabelConfig, { babelConfigFile: path.resolve('./babel.config.js') }],
@@ -18,6 +26,7 @@ module.exports = withPlugins(
   {
     env: {
       WEBPACK_VAR: 'webpack-injection-test',
+      ...createDefinesFromObject(appConfig.variables, '', false),
     },
     distDir: '../functions-ssr/next',
     webpack: config => {
@@ -25,10 +34,11 @@ module.exports = withPlugins(
         test: /\.worker\.(js|ts)$/,
         use: [
           {
-            loader: require.resolve('worker-loader'),
+            loader: 'worker-loader',
             options: {
               name: 'static/[hash].worker.js',
               publicPath: '/_next/',
+              inline: true,
             },
           },
           {
@@ -37,8 +47,8 @@ module.exports = withPlugins(
           },
         ],
       });
-      // // Overcome webpack referencing `window` in chunks
-      config.output.globalObject = `(typeof self !== 'undefined' ? self : this)`;
+      // Overcome webpack referencing `window` in chunks
+      config.output.globalObject = `(typeof self === 'undefined' ? this : self)`;
 
       return config;
     },

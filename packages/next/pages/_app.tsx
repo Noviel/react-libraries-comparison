@@ -1,5 +1,10 @@
 import React from 'react';
 import App, { Container, NextAppContext } from 'next/app';
+import { useStaticRendering } from 'mobx-react';
+
+import { isServer } from '@project/utils/isServer';
+
+useStaticRendering(isServer());
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }: NextAppContext) {

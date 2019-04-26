@@ -1,0 +1,27 @@
+{
+  "name": "@project/gatsby-utils",
+  "description": "DQNT Gatsby utilities",
+  "version": "0.1.0",
+  "author": "Alexander Snov <snov.contact@gmail.com>",
+  "keywords": [
+    "dqnt",
+    "web",
+    "gatsby",
+    "library"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "gatsby-image": "^2.0.20",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-transformer-remark": "^2.3.0",
+    "gatsby-transformer-sharp": "^2.1.8"
+  },
+  "dqnt": {
+    "deployable": false
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { NextStatelessComponent } from 'next';
 
-import { version } from '@game/core';
+import { version } from '@project/clicker-core';
 
 interface Props {
   data: string;
@@ -10,14 +10,14 @@ interface Props {
 const GamePageIndex: NextStatelessComponent<Props> = ({ data }) => {
   return (
     <div>
-      data: {data} {version}
+      SSR with NExt.js data: {data} {version}
     </div>
   );
 };
 
 GamePageIndex.getInitialProps = async () => {
   return {
-    data: process.env.WEBPACK_VAR,
+    data: process.env.WEBPACK_VAR || 'something wrong with webpack',
   };
 };
 

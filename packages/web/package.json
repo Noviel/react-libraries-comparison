@@ -1,12 +1,12 @@
 {
-  "name": "@game/web",
+  "name": "@project/web",
   "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {},
   "dependencies": {
-    "@game/core": "*",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "@project/clicker-core": "*",
+    "@project/react-stack": "*",
+    "firebase": "^5.10.0"
   }
 }

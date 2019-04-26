@@ -1,13 +1,19 @@
 {
-  "name": "game",
-  "version": "0.1.0",
-  "description": "Comparison of the popular React related frameworks and libraries",
+  "name": "project",
+  "version": "0.2.0",
+  "description": "Fullstack scalable monorepo project",
   "main": "index.js",
   "author": "Alexander \"snov\" Semenchenko <snov.contact@gmail.com\"",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "release:web": "yarn workspace @game/next build && yarn workspace @game/functions-ssr deploy && firebase deploy --only hosting:next"
+    "dev": "node ./packages/devtools/scripts/dev.js",
+    "build": "node ./packages/devtools/scripts/build.js",
+    "deploy": "node ./packages/devtools/scripts/deploy.js",
+    "release": "node ./packages/devtools/scripts/release.js",
+    "dev:server": "concurrently \"yarn workspace @project/server dev\" \"yarn workspace @project/server watch\"",
+    "release:ssr": "yarn release -t next -c dev && yarn release -c dev -t functions-ssr",
+    "release:static-site": "yarn release -c dev -t static-site"
   },
   "workspaces": [
     "packages/**"
@@ -34,6 +40,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-decorators": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
+    "@babel/plugin-proposal-optional-catch-binding": "^7.2.0",
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-typescript": "^7.3.3",
     "@types/compression": "^0.0.36",
@@ -43,6 +53,8 @@
     "@typescript-eslint/eslint-plugin": "^1.6.0",
     "@typescript-eslint/parser": "^1.6.0",
     "babel-loader": "^8.0.5",
+    "babel-preset-gatsby": "^0.1.11",
+    "concurrently": "^4.1.0",
     "cross-env": "^5.2.0",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.1.0",
@@ -50,12 +62,16 @@
     "eslint-plugin-react": "^7.12.4",
     "husky": "^1.3.1",
     "lint-staged": "^8.1.5",
+    "nodemon": "^1.18.11",
     "prettier": "^1.16.4",
+    "ts-loader": "^5.4.3",
+    "ts-node": "^8.1.0",
     "typescript": "^3.4.3",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-node-externals": "^1.7.2",
-    "worker-loader": "^2.0.0"
+    "worker-loader": "^2.0.0",
+    "worker-plugin": "^3.1.0"
   },
   "dependencies": {
     "dotenv": "^7.0.0"

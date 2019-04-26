@@ -1,0 +1,9 @@
+node_modules
+
+.firebase
+.vscode
+.git
+*Dockerfile*
+*docker-compose*
+
+docs

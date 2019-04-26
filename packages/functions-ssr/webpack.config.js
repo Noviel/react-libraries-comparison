@@ -14,7 +14,7 @@ module.exports = {
   externals: [
     nodeExternals({
       modulesDir: '../../node_modules',
-      whitelist: [/^@game/],
+      whitelist: [/^@project/],
     }),
   ],
   module: {

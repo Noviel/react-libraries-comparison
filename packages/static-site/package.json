@@ -1,0 +1,18 @@
+{
+  "name": "@project/static-site",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "dependencies": {
+    "@project/clicker-core": "*",
+    "@project/web": "*",
+    "@project/react-stack": "*",
+    "@project/gatsby-utils": "*",
+    "gatsby": "^2.3.25"
+  },
+  "devDependencies": {}
+}

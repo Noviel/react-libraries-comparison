@@ -1,17 +1,21 @@
 {
   "functions": {
-    "source": "packages/functions-ssr",
-    "predeploy":
-      "yarn workspace @game/functions-ssr build:prod"
+    "source": "packages/functions-ssr"
   },
-  "hosting": [{
-    "target": "next",
-    "public": "packages/next/out",
-    "rewrites": [
-      {
-        "source": "**",
-        "function": "app"
-      }
-    ]
-  }]
+  "hosting": [
+    {
+      "target": "next",
+      "public": "packages/next/out",
+      "rewrites": [
+        {
+          "source": "**",
+          "function": "app"
+        }
+      ]
+    },
+    {
+      "target": "gatsby",
+      "public": "packages/site-main/public"
+    }
+  ]
 }

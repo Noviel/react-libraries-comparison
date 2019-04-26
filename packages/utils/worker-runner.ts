@@ -13,3 +13,16 @@ export function run(WorkerCreator: WebpackWorker): Worker | null {
     return null;
   }
 }
+
+export function work(worker: any): Worker {
+  const ctx: Worker = worker as any;
+
+  return ctx;
+}
+
+export async function runWithComlink<T>(Worker: any) {
+  const worker: Worker = new Worker();
+  const ProxiedWorker = require('comlinkjs/comlink').proxy(worker);
+  const instance: T = await new ProxiedWorker();
+  return instance;
+}

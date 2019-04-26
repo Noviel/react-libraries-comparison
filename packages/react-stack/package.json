@@ -1,0 +1,13 @@
+{
+  "name": "@project/react-stack",
+  "version": "0.1.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {
+    "mobx-react": "^5.4.3",
+    "mobx-react-lite": "^1.2.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

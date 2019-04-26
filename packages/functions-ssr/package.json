@@ -1,5 +1,5 @@
 {
-  "name": "@game/functions-ssr",
+  "name": "@project/functions-ssr",
   "version": "0.1.0",
   "main": "dist/index.js",
   "license": "MIT",
@@ -7,17 +7,22 @@
     "build:ts": "../../node_modules/.bin/tsc -p tsconfig.json --traceResolution",
     "build:webpack": "../../node_modules/.bin/webpack",
     "build:prod": "cross-env NODE_ENV=production yarn build:webpack",
+    "build": "yarn build:webpack",
     "deploy": "firebase deploy --only functions"
   },
   "dependencies": {
     "@firebase/app-types": "^0.3.8",
     "body-parser": "^1.18.3",
+    "comlinkjs": "^3.2.0",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "firebase-admin": "^7.2.0",
     "firebase-functions": "^2.2.1",
     "helmet": "^3.16.0",
+    "mobx": "^5.9.4",
+    "mobx-react": "^5.4.3",
+    "mobx-react-lite": "^1.2.0",
     "next": "^8.0.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"

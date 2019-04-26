@@ -6,7 +6,10 @@ module.exports = function(api) {
     ['@babel/preset-typescript', { isTSX: true, allExtensions: true }],
   ];
 
-  const plugins = [];
+  const plugins = [
+    ['@babel/plugin-proposal-decorators', { legacy: true }],
+    ['@babel/plugin-proposal-class-properties', { loose: true }],
+  ];
 
   return {
     presets,

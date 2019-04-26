@@ -10,4 +10,4 @@ WIP: SSR with Firebase Functions and Next.js.
 
 ## Caveats
 
-- Workspace packages (like `@game/web`) can not be resolved as a dependencies in `package.json, so any dependencies must be specified in functions.
+- Workspace packages (like `@project/web`) can not be resolved as a dependencies in `package.json, so any dependencies must be specified in functions.

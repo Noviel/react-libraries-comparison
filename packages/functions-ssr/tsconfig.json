@@ -7,8 +7,8 @@
     "outDir": "lib",
     "baseUrl": ".",
     "paths": {
-      "@game/core": ["../core"],
-      "@game/core/*": ["../core/*"]
+      "@project/clicker-core": ["../clicker-core"],
+      "@project/clicker-core/*": ["../clicker-core/*"]
     }
   },
   "include": [

@@ -7,6 +7,9 @@
     "allowJs": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "alwaysStrict": true,
     "noImplicitReturns": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -14,11 +17,7 @@
     "lib": ["dom", "es7", "webworker"],
     "baseUrl": "./packages/",
     "paths": {
-      "@game/*": ["./*"]
+      "@project/*": ["./*"]
     },
-  },
-  "files": [
-    "custom.d.ts",
-    "global.d.ts"
-  ]
+  }
 }

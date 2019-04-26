@@ -1,12 +1,27 @@
 {
   "projects": {
-    "default": "dqnt-dev"
+    "default": <default-dev-project>,
+    "prod": <default-prod-project>,
+    "dev": <default-dev-project>
   },
   "targets": {
-    "dqnt-dev": {
+    <default-dev-project>: {
       "hosting": {
         "next": [
-          "next-dqnt-dev"
+          <next-dev-sub-project>
+        ],
+        "gatsby": [
+          <gatsby-dev-sub-project>
+        ]
+      }
+    },
+    <default-prod-project>: {
+      "hosting": {
+        "next": [
+          <next-prod-sub-project>
+        ],
+        "gatsby": [
+          <gatsby-prod-sub-project>
         ]
       }
     }
