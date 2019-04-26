@@ -1,8 +1,8 @@
 {
   "name": "gatsby-plugin-configurator",
-  "description": "DQNT Gatsby configuration plugin",
+  "description": "Gatsby configuration plugin",
   "version": "0.1.0",
-  "author": "snov.contact@gmail.com",
+  "author": "Alexander Snov <snov.contact@gmail.com>",
   "keywords": [
     "gatsby",
     "gatsby-plugin"

@@ -1,10 +1,9 @@
 {
   "name": "@project/gatsby-utils",
-  "description": "DQNT Gatsby utilities",
+  "description": "Gatsby utilities",
   "version": "0.1.0",
   "author": "Alexander Snov <snov.contact@gmail.com>",
   "keywords": [
-    "dqnt",
     "web",
     "gatsby",
     "library"
@@ -20,8 +19,5 @@
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-transformer-remark": "^2.3.0",
     "gatsby-transformer-sharp": "^2.1.8"
-  },
-  "dqnt": {
-    "deployable": false
   }
 }
