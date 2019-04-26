@@ -1,15 +1,20 @@
-# Fullstack scalable project example
+# Fullstack scalable monorepo project
 
 ## Technical desicions
 
+- Monorepo via Yarn workspaces
 - TypeScript as a main language
 - React as an UI layer
-- Monorepo via Yarn workspaces
 - Server side rendering with Next.js and Firebase functions
-- Statis site vi Gatsby
-- Client-side heavy blocking calculations are moved to Web Workers
-- Universal interface for interaction with any domain "host"
+- Static site via Gatsby
+- Universal interface for interaction with Domain Host that can be local, in a WebWorker, on a remote server
+- Support for multiple build/deploy targets
 
+## Install
+
+```sh
+$ yarn install
+```
 
 ## Run
 
