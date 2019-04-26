@@ -38,5 +38,5 @@ export const app = functions.https.onRequest(async (req, res) => {
 });
 
 export const helloWorld = functions.https.onRequest((request, response) => {
-  response.send(`DQNT Firebase Functions is ok. ${getVersion()} game: ${gameVersion}\n\n`);
+  response.send(`Firebase Functions is ok. ${getVersion()} game: ${gameVersion}\n\n`);
 });
