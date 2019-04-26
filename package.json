@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "description": "Fullstack scalable monorepo project",
   "main": "index.js",
-  "author": "Alexander \"snov\" Semenchenko <snov.contact@gmail.com\"",
+  "author": "Alexander \"snov\" Semenchenko <snov.contact@gmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {

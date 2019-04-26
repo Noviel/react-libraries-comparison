@@ -2,7 +2,6 @@
   "name": "gatsby-plugin-configurator",
   "description": "Gatsby configuration plugin",
   "version": "0.1.0",
-  "author": "Alexander Snov <snov.contact@gmail.com>",
   "keywords": [
     "gatsby",
     "gatsby-plugin"
